@@ -1,0 +1,13 @@
+The imp commands for the lab are 
+hostname change the hostname in the global conf mode
+enable takes us from exec mode to privelaged exec mode
+configure terminal takes us from privelaged exec mode to the global conf mode
+enable password yourpassword not so secure 
+service password-encryption makes it secure
+enable secret yourpassword already encrypted more secure
+show running config can be used to check the running config in the privileged exec mode
+and finally copy running-conf startup-conf allows to save the setting or changes in the startup conf 
+
+Points to remember
+1. The commands can be shorted if required and ? can be helpful to find the commands
+2. run can be used to run the command of the priv exec mode in the global conf mode
