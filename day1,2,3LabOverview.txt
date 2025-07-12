@@ -1,0 +1,15 @@
+The importance thing to know for Day 1
+Know the signs of the router, switch, firewall 
+The important things to know for Day 2 
+Full duplex UTP cables everything except switch transmit data at 1,2 and receive at 3,6 while in switch it transmit at 3,6 and receive at 1,2
+To connect the compatible receive and transmit for utp we use straight  thrugh cable but for the same receive and transmit we use crossover cable but it was before now they have auto MDI-X so no need
+
+Single mode fiber cable for long range while multimode for short range
+
+The important commands for Day3 lab
+Need to know the ip realease and ip renew to renew the ip addresses on the devices
+The imp topic to know is the 
+OSI model and TCP/IP model
+OSI model- Application, Presentation, Session, Transport, Network, Data Link and Physical  
+(DSPF) Data till session at transport segment, packet at network, frame at data link and at physical it is bits
+TCP/IP Application (OSI model application to session), transport (same in OSI), Internet (network in OSI), and Link (data Link and physical) 

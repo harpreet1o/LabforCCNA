@@ -1,0 +1,10 @@
+The important commands are 
+show ip interface brief can check which interface is on and what is its ip addresss
+int g0/0 lets you get into the interface and assign ip
+ip address value(10.0.0.0) subnetmask(255.0.0.0) helps to assign the ip address to the interface of the router
+
+Key takeways The trick to remember this range is half of 128 is 64 = 192, half of 64 is 32 and 192+32= 224
+The class A is 0-127 but 0 and 127 are not used, the starting bit is 0 and the network number is 128 because 2power 7 and not 2 power 8 because 1 bit is 0 and the possible networks addresses are 2 power 24
+The class B is 128-191 and the starting bit is 10 and the network is 2power 14 because 2 bits are now fixed and also the network address 2 power 16
+The class C is 192-223 and the starting bit is 110 and the network is 2 power 21 because 3 bits now fixed and also the network address is 2 power 8 256 
+Important note the network address number is always 2 power number -2 because the first value is always network address and the last value is broadcast address
