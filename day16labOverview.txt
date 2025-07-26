@@ -1,0 +1,10 @@
+For this lab we are focusing on the access port 
+So basically the subnetting is done on the router but all the connection is still connected to the same switch in case somebody makes a broadcast req it goes to all the pcs but to stop that we divide them into the vlans
+Now we take 3 connections from router (basically subnet) now in the switch we make them connected and configure on it which one belongs to which vlan
+so router connecting interface and its pc on the vlan belong to the same subnet
+the commands are int range g1/1,f5/1,f6/1
+switchport mode access
+switch access vlan 20
+now even if the vlan doesn't exit it is going to be created 
+and to check the vlan connections
+we go do show vlan brief

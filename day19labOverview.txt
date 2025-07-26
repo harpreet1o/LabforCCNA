@@ -1,0 +1,26 @@
+So for the day 19 lab we need to understand the dtp there are four modes and also dtp only occur between switches
+trunk, access , dynamic desirable and dynamic auto
+
+and by defaut it is dynamic auto
+To turn that dtp you need to first convert the port to trunk
+switchport mode trunk
+and then
+switchport nonegotiate (non would work)
+to check if it disabled or not you can use sh int g0/1 sw
+
+for the vtp the vtp is null
+And first we need to give the domain 
+vtp domain name (ccna)
+do sh vtp status
+to make sure
+now if i add the vtp on this then the vlan  would be available for the vtp
+do sh vlan brief
+vtp mode transport to convert it into the transport mode
+Now imp thing it is adviced to turn of the vtp for the pc connecting interfaces of the switches and to do that
+we can just convert that to the access mode and then later on tell the vlan
+int g0/1
+sw mode access
+sw access vlan 20
+done now the dtp is disabled that means no trunking protocol and also the switch won't receive anything even if the vtp is on but for security reason we turn that off
+so for turning off dtp the upper process work
+and for the vtp it is simple turn the domain to the null or just make it transparent

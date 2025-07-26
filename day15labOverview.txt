@@ -1,0 +1,2 @@
+Just need to do understand the subnetting (a pro tip start with the largest and then go for the smallest and also keep in mind the at to leave two bits starting and ending .0 or 127 in /25 subnet) 
+For the lab you need to know the subnetting and then create the static routes and assign the ip addresses to the interfaces of the router and the pcs

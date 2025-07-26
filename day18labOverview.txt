@@ -1,0 +1,24 @@
+For the lab the router is router on stick and now we have accuqired a 3 layer switch
+Now the trunk route is gone we will replace it
+For that
+no int g0/0.10 that is it and then we will give a proper ip address on the g0/0 interface better to use the 30 subnet address
+
+now on the switch we need to do the main part
+first fix the interface of the router with the switch
+default int g1/0/2
+this makes it change from the trunk conf
+now add the ip address and connect it and also the interface is in 2 layer to make it assign the layer 3 ip address we need
+ no switchport 
+and then add the address
+
+And also to enable the route we need
+ip routing command
+
+Now configure the default route to the router 
+
+Now for the vlan we need the svi
+for the svi it is farely easy now what you need to do is make the vlan first 
+and then 
+int vlan 10
+ip add 10.0.0.126 255.255.255.254
+do that for all of the vlan's

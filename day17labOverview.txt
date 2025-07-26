@@ -1,0 +1,30 @@
+So to make the interface trunk 
+first go into the interface
+interface g0/0
+switchport mode trunk (this wont directly work if it supports isl and dot1q because we need this command first)
+switchport trunk encapsulation dot1q (this would give error if it only support dot1q)
+switchport mode trunk
+show interfaces trunk
+switchport trunk allowed vlan (here enter name or all to add all also use except, none or remove(remove all vlans))
+native vlan is the vlan which the native and if no vlanid is provided then it just considered that this belongs to the native
+And also native need to match for the two switches to avoid any confusion and also it is best practice to set it to the unused vlan to avoid any confusion
+
+command to change the native vlan 1001 (which is unused here)
+
+For the router and switch connection we are using 1 trunk connection but we can make it into 3 subinterfaces
+For the switch we just need to configure it normally like a trunk connection but on the router 
+
+These are the commands for the router
+we convert the g0/0 into vlan parts interface g0/0.10 
+encapsulation dot1q 10( 10 here is the vlan number)
+ip add 192.168.1.62 255.255.255.192
+same for the others
+
+For the switch 
+so you can either enable the switch when creating the access port like connecting with the pc and putting them in vlan but lets say the there is no vlan then you need to do is 
+create the which is very easy 
+in conf terminal type vlan 30 or whatever to make it work and also in the switch after setting the make the native vlan to unuable like vlan 1001
+switchport trunk native vlan 1001
+
+ s
+

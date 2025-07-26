@@ -1,0 +1,23 @@
+The important commands are
+To set up the new ip address on the interface 
+go to the
+enable
+conf term
+int g0/0 (whichever you want)
+ip address 192.1.1.254 255.255.255.0
+no shutdown
+
+now to see this
+sh ip int brief
+
+for setting up the new static route on the router you need
+enable
+conf term
+ip route 192.2.0.0 255.255.255.0 (next hop or the router int) 192.4.5.1 or g0/0
+
+to see if it is configured you need to check 
+show ip route
+
+To check this is in configuring terminal you need do in front of the command 
+To change the interface address you just enter the value but for the route you need to remove the route first with no and then add it
+

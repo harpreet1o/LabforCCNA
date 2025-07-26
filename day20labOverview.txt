@@ -1,0 +1,9 @@
+For the day 20 lab it is observational you need to understand the root bridge and how it is prioritize and then also different types of ports
+root, designated and non designated
+Priority list for the root bridge - checking priority id and then mac address
+All the connection are the designated
+Now the other switches tries to make connection it is dependent on the cost which is faster gigabit or fastethernet and then the switch passing the connection is designated and the other is root and there could only be one root and then the other connection to the same switch for passing bpdu is put on the hold basically the other switch is root and this side is non designated
+And also if the cost matches when defining the root port then we take the sender bridge id into the consideration (same id which we use during the root bridge it consists of the priority + mac address) and then the lower sender port like g0 if we have g0 and g1 on the switch providing the link
+
+
+This lab is more observation so need to remember these to understand it

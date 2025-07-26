@@ -1,0 +1,12 @@
+Important commands to learn for lab9
+int g0/0 to get into the connection 
+once inside the interface speed value this could be set manually if required
+duplex full or half tell as per the requirement
+
+show ip int brief to check the interfaces of the router and works on switch aswell
+show int status to check the ports, names, Vlan, Duplex, speed and type
+provide the more info
+
+imp info
+if the duplex and speed is set to auto it chooses the lower from the connection and if the speed is 100mbs it will support half duplex full only at 1000mbs this could collisions if the other is set to full.
+Half refer to only one way communication at a time while the duplex allow two way.
