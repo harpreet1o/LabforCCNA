@@ -1,0 +1,14 @@
+To check the which is the root bridge in the network the command is the
+show spanning-tree
+ So in stp the priority can be changed with
+spanning-tree vlan 1 root primary
+spanning-tree vlan 2 root secondry
+If we want to increase the cost of the interface then go to the interface
+int f0/1
+span vlan 1 cost 100 (basically increasing the cost of the interface the default is faster the speed the lower it is )
+Port Priority = which port to choose when multiple paths to the root have the same cost
+span vlan 1 port-priority 240
+
+Spanning-tree portfast is important and should be used on the non-switch connection, specifically on an end host like a PC, so we don't have to wait for the 30 seconds. 
+spanning-tree bpduguard enable this protects us if somebody tries to connect the switch on the port meant for the pc it disables as switch could change become the root bridge with low priority this avoiding the risk
+For the bpduguard if the port is disabled due to connecting to the switch then we need to do shutdown and then no shutdown to bring it back
